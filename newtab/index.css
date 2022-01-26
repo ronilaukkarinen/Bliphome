@@ -34,7 +34,7 @@ body {
   margin: 12px;
 }
 
-.bookmark>a {
+.bookmark > a {
   display: block;
   padding: 12px 8px;
   text-decoration: none;
@@ -43,7 +43,7 @@ body {
   transition: all 200ms ease-out;
 }
 
-.bookmark>a:hover {
+.bookmark > a:hover {
   background-color: rgba(0, 0, 0, 0.04);
   background-color: white;
   border-radius: 8px;
@@ -55,7 +55,7 @@ body {
   margin: 0 0 12px;
 }
 
-.bookmark__img>img {
+.bookmark__img > img {
   filter: grayscale();
 }
 
@@ -77,18 +77,31 @@ body {
   text-align: center;
   padding: 8px;
   color: rgba(0, 0, 0, 0.5);
-
   opacity: 0.0;
   animation-duration: 10s;
   animation-name: motivational-fadein;
 }
 
 @keyframes motivational-fadein {
-  0% { opacity: 0.0; }
-  10% { opacity: 0.0; }
-  40% { opacity: 1.0; }
-  80% { opacity: 1.0; }
-  100% { opacity: 0.0; }
+  0% {
+    opacity: 0.0;
+  }
+
+  10% {
+    opacity: 0.0;
+  }
+
+  40% {
+    opacity: 1.0;
+  }
+
+  80% {
+    opacity: 1.0;
+  }
+
+  100% {
+    opacity: 0.0;
+  }
 }
 
 .root__error {
@@ -107,34 +120,28 @@ body {
   font-size: 13px;
   font-weight: 500;
   text-transform: uppercase;
-  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
   cursor: pointer;
   transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mdc-button:hover {
   background-color: rgb(66, 133, 244);
-  box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12)
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: rgb(32, 33, 36);
-  }
+body {
+  background-color: rgb(13, 17, 23);
+}
 
-  .bookmark>a:hover {
-    background-color: rgb(50, 54, 57);
-  }
+.bookmark > a:hover {
+  background-color: rgb(22, 27, 34);
+}
 
-  .bookmark__label {
-    color: rgb(241, 243, 244);
-  }
+.bookmark__label {
+  color: rgb(201, 209, 217);
+}
 
-  .motivational {
-    color: rgba(176, 202, 212, 0.5);
-  }
-
-  .root__error>p {
-    color: white;
-  }
+.motivational {
+  color: rgb(48, 54, 61);
 }
